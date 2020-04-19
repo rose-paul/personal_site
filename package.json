@@ -1,0 +1,33 @@
+{
+  "name": "personal_site",
+  "version": "1.0.0",
+  "description": "Paul Rose personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack --mode=development --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rose-paul/personal_site.git"
+  },
+  "author": "Paul Rose",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rose-paul/personal_site/issues"
+  },
+  "homepage": "https://github.com/rose-paul/personal_site#readme",
+  "dependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "bootstrap": "^4.4.1",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.0.0",
+    "react-dom": "^16.13.1",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
