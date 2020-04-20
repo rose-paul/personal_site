@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { CSSTransition } from "react-transition-group";
 import cx from "classnames";
+import Carousel from "./carousel";
 
 const Home = () => {
   const [showHeader, setHeader] = useState(false);
@@ -20,7 +21,8 @@ const Home = () => {
         <img alt="" src="../public/pic.jpeg" />
         <div>
           <h1>Paul Rose</h1>
-          <h3>Software Engineer </h3>
+          <h3>Software Engineer and</h3>
+           <Carousel />
           <div className="header-links">
             <a
               href="https://github.com/rose-paul"
