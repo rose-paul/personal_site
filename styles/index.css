@@ -16,8 +16,69 @@ body, html {
 /* about */
 
 .flex-wrapper {
+    display: flex;
     height: 100vh;
+    margin: 0% 2.5%;
+    align-items: center;
+}
+
+.about {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+#transform  {
+object-fit: contain;
+  -webkit-animation: swoopin 3s;
+  -moz-animation:    swoopin 3s; 
+  -o-animation:      swoopin 3s; 
+  animation:         swoopin 3s;
+}
+
+.about  {
+  -webkit-animation: swoopin 2s;
+  -moz-animation:    swoopin 2s; 
+  -o-animation:      swoopin 2s; 
+  animation:         swoopin 2s;
+  margin-left: 5%;
+}
+
+
+@keyframes swoopin {
+  from {
+    transform: translateX(-100vw);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes swoopleft {
+  from {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.card {
+    width: 20vw;
+    text-align: center;
+}
+
+.card-header, .card-body, .btn {
+    background-color: rgb(51, 51, 51) !important;
+    color: white !important;
+}
+
+.accordion {
+    margin-left: 3%;
+    -webkit-animation: swoopin 1s;
+  -moz-animation:    swoopin 1s; 
+  -o-animation:      swoopin 1s; 
+  animation:         swoopin 1s;
 }
