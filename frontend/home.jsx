@@ -5,8 +5,9 @@ import cx from "classnames";
 const Home = () => {
   const [showHeader, setHeader] = useState(false);
 
-  useEffect(() => 
-    setTimeout(setHeader(true), 2000), []);
+  useEffect(() => {
+      setTimeout(setHeader(true), 2000);
+  }, []);
 
   return (
     <CSSTransition

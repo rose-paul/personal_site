@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import NavBar from './navBar';
 import Home from './home';
+import About from './about';
 
 const App = () => {
    
@@ -10,8 +11,8 @@ const App = () => {
         switch (num) {
             case 1:
                 return setComponent(<Home />)
-            // case 2: 
-            //     return setComponent(<About />)
+            case 2: 
+                return setComponent(<About />)
             // case 3: 
             //     return setComponent(<Portfolio />)
             default:

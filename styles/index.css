@@ -11,3 +11,13 @@ body, html {
     color: white;
     padding: 3% 0%;
 }
+
+
+/* about */
+
+.flex-wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
