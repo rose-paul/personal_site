@@ -13,7 +13,7 @@ const Portfolio = () => {
         link: "https://charityfinderapp.herokuapp.com/#/",
         github: "https://github.com/rose-paul/charity_finder",
         image: "public/charity.png",
-        class: "rotation",
+        class: "rotate",
       },
       Gramcrackers: {
         text:
@@ -23,7 +23,7 @@ const Portfolio = () => {
         link: "https://gramcrackers.herokuapp.com/#/login",
         github: "https://github.com/rose-paul/Gramcrackers",
         image: "public/gramcrackers.png",
-        class: "rotation",
+        class: "rotate",
       },
       Ride: {
         text:
@@ -33,7 +33,7 @@ const Portfolio = () => {
         link: "http://ride-mern.herokuapp.com/#/",
         github: "https://github.com/skleha/ride",
         image: "public/wheel-128.png",
-        class: "rotation",
+        class: "rotate",
       },
       MoscowCows: {
         text:
@@ -83,8 +83,8 @@ const Portfolio = () => {
                   <Card.Text>{projectData.text}</Card.Text>
                 </Card.Body>
                 <ListGroup className="list-group-flush">
-                  <ListGroup.Item>{projectData.frontend}</ListGroup.Item>
-                  <ListGroup.Item>{projectData.backend}</ListGroup.Item>
+                  <ListGroup.Item>Frontend: {projectData.frontend}</ListGroup.Item>
+                  <ListGroup.Item>Backend: {projectData.backend}</ListGroup.Item>
                 </ListGroup>
                 <Card.Body>
                   <Card.Link href={projectData.link}>Live</Card.Link>
