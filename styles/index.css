@@ -1,0 +1,13 @@
+body, html {
+    margin: 0;
+    background-image: linear-gradient(to bottom right, #222429, rgb(63, 63, 63));
+}
+
+* {
+    color: white;
+}
+
+.nav-tabs .nav-link {
+    color: white;
+    padding: 3% 0%;
+}
