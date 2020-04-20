@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import NavBar from './navBar';
 import Home from './home';
 import About from './about';
+import Portfolio from './portfolio';
 
 const App = () => {
    
@@ -13,8 +14,8 @@ const App = () => {
                 return setComponent(<Home />)
             case 2: 
                 return setComponent(<About />)
-            // case 3: 
-            //     return setComponent(<Portfolio />)
+            case 3: 
+                return setComponent(<Portfolio />)
             default:
                 return
         }
