@@ -14,12 +14,6 @@ const About = () => (
       </article>
 
       <article>
-        I value teamwork, continual growth and purpose-driven work. I love
-        tackling substantive, real-world problems with simple, user-friendly
-        solutions.
-      </article>
-
-      <article>
         Outside of programming, I love to travel. I was fortunate to explore a
         lot of places during my time in Moscow, both in the country and the
         surrounding region. This photo is from the Krasnodar region on top of

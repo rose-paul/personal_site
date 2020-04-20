@@ -45,6 +45,10 @@ object-fit: contain;
   margin-left: 5%;
 }
 
+article {
+    margin-bottom: 2%;
+}
+
 
 @keyframes swoopin {
   from {
