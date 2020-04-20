@@ -22,7 +22,7 @@ const Facts = () => (
         </Accordion.Toggle>
       </Card.Header>
       <Accordion.Collapse eventKey="1">
-        <Card.Body>Addding to this site / Moscow Cows</Card.Body>
+        <Card.Body>Adding to this site / Moscow Cows</Card.Body>
       </Accordion.Collapse>
     </Card>
     <Card>
