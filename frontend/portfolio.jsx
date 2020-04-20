@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 
@@ -13,6 +13,7 @@ const Portfolio = () => {
         link: "https://charityfinderapp.herokuapp.com/#/",
         github: "https://github.com/rose-paul/charity_finder",
         image: "public/charity.png",
+        class: "rotation",
       },
       Gramcrackers: {
         text:
@@ -22,6 +23,7 @@ const Portfolio = () => {
         link: "https://gramcrackers.herokuapp.com/#/login",
         github: "https://github.com/rose-paul/Gramcrackers",
         image: "public/gramcrackers.png",
+        class: "rotation",
       },
       Ride: {
         text:
@@ -31,6 +33,7 @@ const Portfolio = () => {
         link: "http://ride-mern.herokuapp.com/#/",
         github: "https://github.com/skleha/ride",
         image: "public/wheel-128.png",
+        class: "rotation",
       },
       MoscowCows: {
         text:
@@ -40,7 +43,19 @@ const Portfolio = () => {
         link: "https://rose-paul.github.io/MoscowCows/",
         github: "https://github.com/rose-paul/MoscowCows",
         image: "public/matryoshka.png",
+        class: "shake",
       },
+    };
+
+    const [animation, setAnimation] = useState(null);
+
+    const mouseEnterAnim = e => {
+      let type = e.target.innerText;
+      setAnimation(type)
+    }
+
+    const mouseLeaveAnim = () => {
+      setAnimation(null)
     };
 
     return (
@@ -55,8 +70,14 @@ const Portfolio = () => {
                         //   src={projectData.image}
                         /> */}
                 <Card.Body>
-                  <Card.Title>
-                    <img src={projectData.image} className="thumbnail"></img>
+                  <Card.Title
+                    onMouseEnter={mouseEnterAnim}
+                    onMouseLeave={mouseLeaveAnim}
+                  >
+                    <img 
+                    src={projectData.image} 
+                    className={`thumbnail ${proj === animation ? projectData.class : null}`}
+                    ></img>
                     {proj}
                   </Card.Title>
                   <Card.Text>{projectData.text}</Card.Text>
