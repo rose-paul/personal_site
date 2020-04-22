@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
+import { CSSTransition } from "react-transition-group";
 
 const Portfolio = () => {
 
@@ -48,6 +49,13 @@ const Portfolio = () => {
     };
 
     const [animation, setAnimation] = useState(null);
+    const [inState, setTransition] = useState(false);
+
+    useEffect(() => {
+      setTimeout(() => {
+        setTransition(true)
+      },0)
+    }, [])
 
     const mouseEnterAnim = e => {
       let type = e.target.innerText;
@@ -60,40 +68,53 @@ const Portfolio = () => {
 
     return (
       <div className="project-group-wrapper">
-        <div className="project-group">
-          {Object.keys(data).map((proj) => {
-            let projectData = data[proj];
-            return (
-              <Card style={{ width: "18rem" }}>
-                {/* <Card.Img
+        <CSSTransition
+          in={inState}
+          timeout={4000}
+          classNames="auto"
+          appear
+        >
+          <div className="project-group">
+            {Object.keys(data).map((proj) => {
+              let projectData = data[proj];
+              return (
+                <Card style={{ width: "18rem" }}>
+                  {/* <Card.Img
                           variant="top"
                         //   src={projectData.image}
                         /> */}
-                <Card.Body>
-                  <Card.Title
-                    onMouseEnter={mouseEnterAnim}
-                    onMouseLeave={mouseLeaveAnim}
-                  >
-                    <img 
-                    src={projectData.image} 
-                    className={`thumbnail ${proj === animation ? projectData.class : null}`}
-                    ></img>
-                    {proj}
-                  </Card.Title>
-                  <Card.Text>{projectData.text}</Card.Text>
-                </Card.Body>
-                <ListGroup className="list-group-flush">
-                  <ListGroup.Item>Frontend: {projectData.frontend}</ListGroup.Item>
-                  <ListGroup.Item>Backend: {projectData.backend}</ListGroup.Item>
-                </ListGroup>
-                <Card.Body>
-                  <Card.Link href={projectData.link}>Live</Card.Link>
-                  <Card.Link href={projectData.github}>Github</Card.Link>
-                </Card.Body>
-              </Card>
-            );
-          })}
-        </div>
+                  <Card.Body>
+                    <Card.Title
+                      onMouseEnter={mouseEnterAnim}
+                      onMouseLeave={mouseLeaveAnim}
+                    >
+                      <img
+                        src={projectData.image}
+                        className={`thumbnail ${
+                          proj === animation ? projectData.class : null
+                        }`}
+                      ></img>
+                      {proj}
+                    </Card.Title>
+                    <Card.Text>{projectData.text}</Card.Text>
+                  </Card.Body>
+                  <ListGroup className="list-group-flush">
+                    <ListGroup.Item>
+                      Frontend: {projectData.frontend}
+                    </ListGroup.Item>
+                    <ListGroup.Item>
+                      Backend: {projectData.backend}
+                    </ListGroup.Item>
+                  </ListGroup>
+                  <Card.Body>
+                    <Card.Link href={projectData.link}>Live</Card.Link>
+                    <Card.Link href={projectData.github}>Github</Card.Link>
+                  </Card.Body>
+                </Card>
+              );
+            })}
+          </div>
+        </CSSTransition>
       </div>
     );
 }

@@ -58,3 +58,25 @@
     transform: rotate(359deg);
   }
 }
+
+.auto-enter {
+  opacity: 0;
+  transform: translateY(500%) scale(0.1);
+}
+
+.auto-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1000ms, transform 1000ms;
+}
+
+/* .auto-leave {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.auto-leave.auto-leave-active {
+  opacity: 0.01;
+  transform: translateY(500%);
+  transition: opacity 500ms, transform 500ms;
+} */
