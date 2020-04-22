@@ -50,9 +50,11 @@ const Portfolio = () => {
 
     const [animation, setAnimation] = useState(null);
     const [inState, setTransition] = useState(false);
+    const [hide, setHide] = useState('hide')
 
     useEffect(() => {
       setTimeout(() => {
+        setHide('')
         setTransition(true)
       },0)
     }, [])
@@ -68,13 +70,8 @@ const Portfolio = () => {
 
     return (
       <div className="project-group-wrapper">
-        <CSSTransition
-          in={inState}
-          timeout={4000}
-          classNames="auto"
-          appear
-        >
-          <div className="project-group">
+        <CSSTransition in={inState} timeout={4000} classNames="auto" appear>
+          <div className={`project-group ${hide}`}>
             {Object.keys(data).map((proj) => {
               let projectData = data[proj];
               return (
