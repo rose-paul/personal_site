@@ -54,7 +54,7 @@ const Portfolio = () => {
 
     useEffect(() => {
       setTimeout(() => {
-        setHide('')
+        setHide("")
         setTransition(true)
       },0)
     }, [])
