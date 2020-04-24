@@ -2,6 +2,7 @@
   "name": "personal_site",
   "version": "1.0.0",
   "description": "Paul Rose personal website",
+  "homepage": "https://paulrose.tech",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -16,7 +17,6 @@
   "bugs": {
     "url": "https://github.com/rose-paul/personal_site/issues"
   },
-  "homepage": "https://github.com/rose-paul/personal_site#readme",
   "dependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",

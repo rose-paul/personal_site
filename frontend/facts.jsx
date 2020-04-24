@@ -12,7 +12,7 @@ const Facts = () => (
         </Accordion.Toggle>
       </Card.Header>
       <Accordion.Collapse eventKey="0">
-        <Card.Body>Cook lots of Indian food</Card.Body>
+        <Card.Body>Cook / Yoga</Card.Body>
       </Accordion.Collapse>
     </Card>
     <Card>
@@ -22,7 +22,7 @@ const Facts = () => (
         </Accordion.Toggle>
       </Card.Header>
       <Accordion.Collapse eventKey="1">
-        <Card.Body>Adding to this site / Moscow Cows</Card.Body>
+        <Card.Body>Adding to this site!</Card.Body>
       </Accordion.Collapse>
     </Card>
     <Card>
@@ -52,7 +52,7 @@ const Facts = () => (
         </Accordion.Toggle>
       </Card.Header>
       <Accordion.Collapse eventKey="4">
-        <Card.Body>Twilight Struggle or Animal Crossing</Card.Body>
+        <Card.Body>Animal Crossing</Card.Body>
       </Accordion.Collapse>
     </Card>
   </Accordion>
