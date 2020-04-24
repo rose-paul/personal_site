@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 const Carousel = () => {
 
-    const facts = ["Paul van Dyk Fanatic", "Pelmeni Enthusiast", "Red Wings Die-Hard"]
+    const facts = ["Paul van Dyk Fanatic", "JavaScript Obsessed", "Wanderer", "Pelmeni Enthusiast"]
     const [display, setDisplay] = useState("Paul van Dyk Fanatic");
     const len = facts.length;
     let index = 1;

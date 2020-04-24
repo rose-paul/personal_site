@@ -5,8 +5,10 @@ import Carousel from "./carousel";
 
 const Home = () => {
   const [showHeader, setHeader] = useState(false);
+  const [hide, setHide] = useState('hide-header')
 
   useEffect(() => {
+    setTimeout(setHide(true), 1000)
       setTimeout(setHeader(true), 2000);
   }, []);
 
@@ -17,7 +19,7 @@ const Home = () => {
       classNames="header-transition"
       appear
     >
-      <header className={cx("App-header", "header-transition--active")}>
+      <header className={`App-header ${hide}`}>
         <img alt="" src="../public/pic.jpeg" />
         <div>
           <h1>Paul Rose</h1>
