@@ -1,3 +1,7 @@
 # Personal Site
 
-## Built with React, Webpack, Bootstrap, CSS, Githubpages
+### Technologies 
+* React
+* Webpack 
+* Bootstrap 
+* CSS 
