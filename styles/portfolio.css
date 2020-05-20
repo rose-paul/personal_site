@@ -60,12 +60,10 @@
 }
 
 .auto-enter {
-  opacity: 0;
-  transform: translateY(500%) scale(0.1);
+  transform: translateY(500%) scale(0);
 }
 
 .auto-enter-active {
-  opacity: 1;
   transform: translateY(0);
   transition: opacity 200ms, transform 600ms;
 }
