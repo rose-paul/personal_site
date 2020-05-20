@@ -28,31 +28,41 @@ const Facts = () => (
     <Card>
       <Card.Header>
         <Accordion.Toggle as={Button} variant="link" eventKey="2">
-          What I'm Reading
+          What I'm Learning
         </Accordion.Toggle>
       </Card.Header>
       <Accordion.Collapse eventKey="2">
-        <Card.Body>Mathematics Rebooted</Card.Body>
+        <Card.Body>TypeScript and Linux</Card.Body>
       </Accordion.Collapse>
     </Card>
     <Card>
       <Card.Header>
         <Accordion.Toggle as={Button} variant="link" eventKey="3">
-          What I'm Listening To
+          What I'm Reading
         </Accordion.Toggle>
       </Card.Header>
       <Accordion.Collapse eventKey="3">
-        <Card.Body>Probably Paul van Dyk</Card.Body>
+        <Card.Body>Mathematics Rebooted and various texts on Linux</Card.Body>
       </Accordion.Collapse>
     </Card>
     <Card>
       <Card.Header>
         <Accordion.Toggle as={Button} variant="link" eventKey="4">
-          What I'm Playing
+          What I'm Listening To
         </Accordion.Toggle>
       </Card.Header>
       <Accordion.Collapse eventKey="4">
-        <Card.Body>Animal Crossing</Card.Body>
+        <Card.Body>This <a href="https://music.apple.com/us/playlist/techno/pl.7c5c00d3b2454c3a8bcbb5da3f395988">playlist</a> in Apple Music</Card.Body>
+      </Accordion.Collapse>
+    </Card>
+    <Card>
+      <Card.Header>
+        <Accordion.Toggle as={Button} variant="link" eventKey="5">
+          What I'm Playing
+        </Accordion.Toggle>
+      </Card.Header>
+      <Accordion.Collapse eventKey="5">
+        <Card.Body>Animal Crossing (reach out if you have good turnip prices)</Card.Body>
       </Accordion.Collapse>
     </Card>
   </Accordion>
