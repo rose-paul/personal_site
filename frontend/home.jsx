@@ -20,7 +20,7 @@ const Home = () => {
       appear
     >
       <header className={`App-header ${hide}`}>
-        <img alt="" src="../public/pic.jpeg" />
+        <img alt="" src="../public/yaroslavl.JPG" id="display-pic" />
         <div>
           <h1>Paul Rose</h1>
           <h3>Software Engineer and</h3>

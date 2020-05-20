@@ -26,6 +26,7 @@ body, html {
 .App-header img {
   border-radius: 100px;
   margin-right: 5px;
+  height: 45vh;
 }
 
 .header-links {
