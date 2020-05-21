@@ -65,7 +65,8 @@
 
 .auto-enter-active {
   transform: translateY(0);
-  transition: opacity 200ms, transform 600ms;
+  transition: transform 1000ms;
+  background-image: inherit;
 }
 
 /* .auto-leave {
@@ -81,4 +82,9 @@
 
 .hide {
   display: none;
+}
+
+.card-title > a {
+  text-decoration: none !important;
+  color: white;
 }

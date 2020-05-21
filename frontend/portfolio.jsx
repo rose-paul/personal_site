@@ -14,6 +14,7 @@ const Portfolio = () => {
         link: "https://charityfinderapp.herokuapp.com/#/",
         github: "https://github.com/rose-paul/charity_finder",
         image: "public/charity.png",
+        screenshot: "public/CharityFinder.png",
         class: "rotate",
       },
       Gramcrackers: {
@@ -24,6 +25,7 @@ const Portfolio = () => {
         link: "https://gramcrackers.herokuapp.com/#/login",
         github: "https://github.com/rose-paul/Gramcrackers",
         image: "public/gramcrackers.png",
+        screenshot: "public/GramcrackersProj.png",
         class: "rotate",
       },
       Ride: {
@@ -34,6 +36,7 @@ const Portfolio = () => {
         link: "http://ride-mern.herokuapp.com/#/",
         github: "https://github.com/skleha/ride",
         image: "public/wheel-128.png",
+        screenshot: "public/Ride.png",
         class: "rotate",
       },
       MoscowCows: {
@@ -44,6 +47,7 @@ const Portfolio = () => {
         link: "https://rose-paul.github.io/MoscowCows/",
         github: "https://github.com/rose-paul/MoscowCows",
         image: "public/matryoshka.png",
+        screenshot: "public/MoscowCows.png",
         class: "shake",
       },
     };
@@ -70,7 +74,7 @@ const Portfolio = () => {
 
     return (
       <div className="project-group-wrapper">
-        <CSSTransition in={inState} timeout={4000} classNames="auto" appear>
+        <CSSTransition in={inState} timeout={700} classNames="auto" appear>
           <div className={`project-group ${hide}`}>
             {Object.keys(data).map((proj) => {
               let projectData = data[proj];
@@ -78,7 +82,7 @@ const Portfolio = () => {
                 <Card style={{ width: "18rem" }}>
                   {/* <Card.Img
                           variant="top"
-                        //   src={projectData.image}
+                        src={projectData.screenshot}
                         /> */}
                   <Card.Body>
                     <Card.Title
@@ -91,7 +95,7 @@ const Portfolio = () => {
                           proj === animation ? projectData.class : null
                         }`}
                       ></img>
-                      {proj}
+                      <a href={projectData.link}>{proj}</a>
                     </Card.Title>
                     <Card.Text>{projectData.text}</Card.Text>
                   </Card.Body>
