@@ -1,10 +1,14 @@
 body, html {
     margin: 0;
+    height: 100%;
     background-image: linear-gradient(to bottom right, #222429, rgb(63, 63, 63));
 }
 
 * {
-    color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
 }
 
 .nav-tabs .nav-link {
@@ -17,8 +21,7 @@ body, html {
 
 .flex-wrapper {
     display: flex;
-    height: 100vh;
-    margin: 0% 2.5%;
+    margin: 5% 2.5%;
     align-items: center;
 }
 

@@ -20,7 +20,8 @@ body, html {
     justify-content: center;
     color: white;
     font-family: sans-serif;
-    height: 95vh;
+    margin-top: 10%;
+    /* height: 95vh; */
 }
 
 .App-header img {
