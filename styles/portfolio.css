@@ -1,3 +1,6 @@
+.project-group-wrapper {
+  background-image: inherit;
+}
 .project-group {
     display: flex;
     justify-content: space-around;
@@ -8,6 +11,10 @@
 
 .list-group-item {
         background-color: rgb(51, 51, 51) !important;
+}
+
+.card {
+  margin-bottom: 3%;
 }
 
 .card-link {

@@ -80,10 +80,10 @@ const Portfolio = () => {
               let projectData = data[proj];
               return (
                 <Card style={{ width: "18rem" }}>
-                  {/* <Card.Img
+                  <Card.Img
                           variant="top"
                         src={projectData.screenshot}
-                        /> */}
+                        />
                   <Card.Body>
                     <Card.Title
                       onMouseEnter={mouseEnterAnim}
