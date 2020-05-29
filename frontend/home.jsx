@@ -19,6 +19,7 @@ const Home = () => {
       classNames="header-transition"
       appear
     >
+      <div className="header-wrapper">
       <header className={`App-header ${hide}`}>
         <img alt="" src="../public/yaroslavl.JPG" id="display-pic" />
         <div>
@@ -50,6 +51,7 @@ const Home = () => {
           </div>
         </div>
       </header>
+    </div>
     </CSSTransition>
   );
 };
