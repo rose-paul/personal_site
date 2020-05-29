@@ -2,6 +2,7 @@ import React from "react";
 import Facts from "./facts";
 
 const About = () => (
+  <div className='header-wrapper'>
   <div className="flex-wrapper">
     <img id="transform" src="../public/about.jpg" alt="" />
     <section className="about">
@@ -25,6 +26,7 @@ const About = () => (
       </article>
     </section>
         <Facts />
+  </div>
   </div>
 );
 
