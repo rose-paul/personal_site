@@ -1,7 +1,15 @@
 body, html {
     margin: 0;
     height: 100%;
+}
+
+/* body {
     background-image: linear-gradient(to bottom right, #222429, rgb(63, 63, 63));
+} */
+
+#root {
+  background-image: linear-gradient(to bottom right, #222429, rgb(63, 63, 63));
+  height: 100vh;
 }
 
 * {

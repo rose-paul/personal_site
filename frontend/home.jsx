@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { CSSTransition } from "react-transition-group";
-import cx from "classnames";
 import Carousel from "./carousel";
 
 const Home = () => {
@@ -13,13 +12,13 @@ const Home = () => {
   }, []);
 
   return (
+    <div className="header-wrapper">
     <CSSTransition
       in={showHeader}
       timeout={4000}
       classNames="header-transition"
       appear
     >
-      <div className="header-wrapper">
       <header className={`App-header ${hide}`}>
         <img alt="" src="../public/yaroslavl.JPG" id="display-pic" />
         <div>
@@ -51,8 +50,8 @@ const Home = () => {
           </div>
         </div>
       </header>
-    </div>
     </CSSTransition>
+    </div>
   );
 };
 

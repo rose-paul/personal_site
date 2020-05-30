@@ -54,6 +54,7 @@ article {
 .card {
     width: 20vw;
     text-align: center;
+    margin-bottom: 0;
 }
 
 .card-header, .card-body, .btn {
