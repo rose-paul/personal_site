@@ -2,9 +2,15 @@ import React from "react";
 import Facts from "./facts";
 
 const About = () => (
-  <div className='header-wrapper'>
+  // <div className='header-wrapper'>
   <div className="flex-wrapper">
-    <img id="transform" src="../public/about.jpg" alt="" />
+    <div id="transform">
+      <picture>
+        <source media='(min-width: 401px)' srcset='../public/about.jpg' />
+        <source media='(max-width: 400px)' srcset='../public/about-small.jpg' />
+        <img src='../public/about.jpg' />
+      </picture>
+    </div>
     <section className="about">
       <h2>About Me</h2>
       <article>
@@ -27,7 +33,7 @@ const About = () => (
     </section>
         <Facts />
   </div>
-  </div>
+  // </div>
 );
 
 export default About;

@@ -12,11 +12,13 @@
 .header-wrapper {
   height: 90vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
 .App-header {
     display: flex;
+    flex-direction: column; 
     align-items: center;
     color: white;
     font-family: sans-serif;
@@ -63,4 +65,15 @@
 
 .hide-header {
   opacity: 0;
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .App-header, .header-wrapper {
+    flex-direction: row;
+  }
 }

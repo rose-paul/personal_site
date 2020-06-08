@@ -1,5 +1,6 @@
 .flex-wrapper {
     display: flex;
+    flex-direction: column;
     margin: 5% 2.5%;
     align-items: center;
 }
@@ -68,4 +69,14 @@ article {
   -moz-animation:    swoopin 1000ms; 
   -o-animation:      swoopin 1000ms; 
   animation:         swoopin 1000ms;
+}
+
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+}
+
+@media only screen and (min-width: 961px) {
+  .flex-wrapper {
+    flex-direction: row;
+  }
 }
