@@ -75,6 +75,16 @@ article {
   .accordion {
     display: none;
   }
+  img {
+    max-width: 80vw;
+  }
+  .flex-wrapper {
+    margin: 0;
+    width: 100%;
+  }
+  .about article:last-child {
+    margin: 0;
+  }
 }
 @media only screen and (min-width: 401px) and (max-width: 960px) {
   .accordion {
