@@ -14,7 +14,7 @@ const Portfolio = () => {
         link: "https://charityfinderapp.herokuapp.com/#/",
         github: "https://github.com/rose-paul/charity_finder",
         image: "public/charity.png",
-        screenshot: "public/CharityFinder.png",
+        screenshot: "public/CharityFinder.jpg",
         class: "rotate",
       },
       Gramcrackers: {
@@ -25,7 +25,7 @@ const Portfolio = () => {
         link: "https://gramcrackers.herokuapp.com/#/login",
         github: "https://github.com/rose-paul/Gramcrackers",
         image: "public/gramcrackers.png",
-        screenshot: "public/GramcrackersProj.png",
+        screenshot: "public/GramcrackersProj.jpg",
         class: "rotate",
       },
       Ride: {
@@ -36,7 +36,7 @@ const Portfolio = () => {
         link: "http://ride-mern.herokuapp.com/#/",
         github: "https://github.com/skleha/ride",
         image: "public/wheel-128.png",
-        screenshot: "public/Ride.png",
+        screenshot: "public/Ride.jpg",
         class: "rotate",
       },
       MoscowCows: {
@@ -47,7 +47,7 @@ const Portfolio = () => {
         link: "https://rose-paul.github.io/MoscowCows/",
         github: "https://github.com/rose-paul/MoscowCows",
         image: "public/matryoshka.png",
-        screenshot: "public/MoscowCows.png",
+        screenshot: "public/MoscowCows.jpg",
         class: "shake",
       },
     };

@@ -6,8 +6,8 @@ const About = () => (
   <div className="flex-wrapper">
     <div id="transform">
       <picture>
-        <source media='(min-width: 401px)' srcset='../public/about.jpg' />
-        <source media='(max-width: 400px)' srcset='../public/about-small.jpg' />
+        <source media='(min-width: 961px)' srcSet='../public/about.jpg' />
+        <source media='(max-width: 960px)' srcSet='../public/about-small.jpg' />
         <img src='../public/about.jpg' />
       </picture>
     </div>
