@@ -44,8 +44,8 @@ const Home = () => {
               <img alt="" src="../public/003-email.png" />
             </a>
 
-            <a href="../public/PaulRose_Resume.pdf" download="PaulRose_Resume">
-              <img src="../public/cv.png" alt="" />
+              <a href="public/PaulRose_Resume.pdf" download="PaulRose_Resume">
+              <img src="../public/cv.png" alt="" /> 
             </a>
           </div>
         </div>
