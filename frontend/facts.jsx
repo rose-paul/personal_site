@@ -42,7 +42,7 @@ const Facts = () => (
         </Accordion.Toggle>
       </Card.Header>
       <Accordion.Collapse eventKey="3">
-        <Card.Body>You Don't Know JS, Mathematics Rebooted and various Linux texts</Card.Body>
+        <Card.Body>You Don't Know JS</Card.Body>
       </Accordion.Collapse>
     </Card>
     {/* <Card>
@@ -55,7 +55,7 @@ const Facts = () => (
         <Card.Body>This <a href="https://music.apple.com/us/playlist/techno/pl.7c5c00d3b2454c3a8bcbb5da3f395988">playlist</a> in Apple Music</Card.Body>
       </Accordion.Collapse>
     </Card> */}
-    <Card>
+    {/* <Card>
       <Card.Header>
         <Accordion.Toggle as={Button} variant="link" eventKey="5">
           What I'm Playing
@@ -64,7 +64,7 @@ const Facts = () => (
       <Accordion.Collapse eventKey="5">
         <Card.Body>Animal Crossing (reach out if you have good turnip prices)</Card.Body>
       </Accordion.Collapse>
-    </Card>
+    </Card> */}
   </Accordion>
 );
 
