@@ -14,21 +14,15 @@ const About = () => (
     <section className="about">
       <h2>About Me</h2>
       <article>
-      My previous work teaching at tech companies in Moscow introduced me to the spellbinding realm of software
-       development: the challenge of problem-solving and designing systems, the fun of building, and the potential for making 
-       impactful products and experiences.
+      My previous work at tech companies in Moscow introduced me to the spellbinding realm of software development – a realm of 
+      problem-solving, critical thinking, being resourceful and creating unbelievable products and experiences. 
       </article>
       <article>
-        Fast-forward from that initial enchantment to now: I have several 
-        engineering projects using a range of technologies. 
-        I’m especially adept at JavaScript, React and the surrounding eco-system. 
-      </article>
-
-      <article>
-        Outside of programming, I love to travel. I was fortunate to explore a
-        lot of places during my time in Moscow, both in the country and the
-        surrounding region. This photo is from the Krasnodar region on top of
-        the mountain Indyuk.
+      *What do I bring to the table?*
+      My experience includes interaction with people of all backgrounds and travel to places/climates I never imagined. 
+      I’ve constantly pushed my horizons, stepped outside my comfort zone and consided new perspectives. 
+      My professional work mostly has been client-centric. This experience leads me to be resourceful and creative in producing 
+      usable solutions, whether it be a system design issue, a React frontend, a Node backend, or an isolated algorithmic problem.
       </article>
     </section>
         <Facts />

@@ -12,8 +12,8 @@ const App = () => {
         switch (num) {
             case 1:
                 return setComponent(<Home />)
-            case 2: 
-                return setComponent(<About />)
+            // case 2: 
+            //     return setComponent(<About />)
             case 3: 
                 return setComponent(<Portfolio />)
             default:

@@ -2,8 +2,15 @@ import React, { useEffect, useState } from 'react';
 
 const Carousel = () => {
 
-    const facts = ["Paul van Dyk Fanatic", "React Buff", "Pelmeni Enthusiast", "Jazzed by JS"]
-    const [display, setDisplay] = useState("Paul van Dyk Fanatic");
+    const facts = [
+      "React Buff",
+      "Resourceful Traveler",
+      "Lifelong Learner",
+      "Team Player",
+      "Pelmeni Enthusiast"
+    ];
+
+    const [display, setDisplay] = useState("React Buff");
     const len = facts.length;
     let index = 1;
 
@@ -14,7 +21,7 @@ const Carousel = () => {
     }
 
     useEffect( () => {
-        let intv = setInterval(changeDisplay, 1500)
+        let intv = setInterval(changeDisplay, 2000)
         return () => clearInterval(intv)
     }, [])
 
