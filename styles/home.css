@@ -10,10 +10,19 @@
 }
 
 .header-wrapper {
-  /* height: 90vh; */
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+@media only screen and (min-height: 382px) and (min-width: 500px) {
+  .header-wrapper {
+    height: 80vh;
+  }
+  #root {
+    height: inherit !important;
+  }
 }
 
 .App-header {
