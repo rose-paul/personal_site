@@ -1,14 +1,18 @@
+.project-group-wrapper {
+    height: auto;
+    background-image: inherit;
+}
+
 .project-group {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 3%;
-    height: inherit;
-    background-image: linear-gradient(to bottom right, #222429, rgb(63, 63, 63));
+
 }
 
 .list-group-item {
-        background-color: rgb(51, 51, 51) !important;
+    background-color: rgb(51, 51, 51) !important;
 }
 
 .project-group .card {
@@ -67,7 +71,7 @@
 .auto-enter-active {
   transform: translateY(0);
   transition: transform 1000ms;
-  background-image: inherit;
+  /* b-image: inherit; */
 }
 
 .hide {
