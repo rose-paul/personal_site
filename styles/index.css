@@ -32,4 +32,8 @@ body, html {
   .nav {
     display: none !important;
   }
+
+  .header-wrapper {
+    height: 100vh;
+  }
 }
