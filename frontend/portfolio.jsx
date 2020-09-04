@@ -17,6 +17,17 @@ const Portfolio = () => {
         screenshot: "public/CharityFinder.jpg",
         class: "rotate",
       },
+      Knapsack: {
+        text:
+          "A visualization of the classic Knapsack Problem using vanilla JS, React and D3. Leveraging closure, check out how the algorithm plays out at each iteration. Can you spot the pattern?",
+        frontend: "JavaScript, React, D3",
+        backend: "(of the frontend) webpack",
+        link: "https://rose-paul.github.io/DP_vizualization/",
+        github: "https://github.com/rose-paul/DP_vizualization",
+        image: "/public/backpack.png",
+        screenshot: "/public/Knapsack.png",
+        class: "shake",
+      },
       Gramcrackers: {
         text:
           "Gramcrackers, an Instagram clone, is a social media web app that allows users to post photos and interact with other users through following, comments and likes.",
@@ -49,18 +60,6 @@ const Portfolio = () => {
         image: "public/matryoshka.png",
         screenshot: "public/MoscowCows.jpg",
         class: "shake",
-      },
-      Knapsack: {
-        text:
-          "A visualization of the classic Knapsack Problem using vanilla JS, React and D3. Leveraging closure, check out how the algorithm plays out at each iteration. Can you spot the pattern?",
-        frontend: "JavaScript, React, D3",
-        backend: "(of the frontend) webpack",
-        link: "https://rose-paul.github.io/DP_vizualization/",
-        github: "https://github.com/rose-paul/DP_vizualization",
-        image: "/public/backpack.png",
-        screenshot: "/public/Knapsack.png",
-        class: "shake"
-
       },
     };
 
