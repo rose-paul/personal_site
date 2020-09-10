@@ -5,21 +5,22 @@ import Carousel from "./carousel";
 const Home = () => {
   const [showHeader, setHeader] = useState(false);
   const [hide, setHide] = useState('hide-header')
-
+  const [transform, setTransform] = useState(null)
+  console.log(transform)
   useEffect(() => {
-    setTimeout(setHide(true), 1000)
-      setTimeout(setHeader(true), 2000);
+    setTimeout( () => { setTransform('transform-header')}, 10)
+      // setTimeout(setHeader(true), 2000);
   }, []);
 
   return (
       <div className="header-wrapper">
-        <CSSTransition
+        {/* <CSSTransition
           in={showHeader}
           timeout={4000}
           classNames="header-transition"
           appear
-        >
-          <header className={`App-header ${hide}`}>
+        > */}
+          <header className={`App-header ${transform} fade-in`}>
             <img alt="" src="../public/yaroslavl.JPG" id="display-pic" />
             <div>
               <h1>Paul Rose</h1>
@@ -50,7 +51,7 @@ const Home = () => {
               </div>
             </div>
           </header>
-        </CSSTransition>
+        {/* </CSSTransition> */}
       </div>
   );
 };
